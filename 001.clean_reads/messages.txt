@@ -1,0 +1,519 @@
+Last login: Thu Jun 27 19:49:57 on ttys000
+(base) s8-mc07 2024-06-27 20:01:49 ~ : cd hub/keflavik/001.clean_reads
+(base) s8-mc07 2024-06-27 20:02:11 ~/hub/keflavik/001.clean_reads : python trimmer.py
+['M104_EV_1', 'M104_EV_2', 'M104_EV_3', 'M104_SET_1', 'M104_SET_2', 'M104_SET_3', 'M501_miR1_1', 'M501_miR1_2', 'M501_miR1_3', 'M501_miR2_1', 'M501_miR2_2', 'M501_miR2_3', 'M501_miRN_1', 'M501_miRN_2', 'M501_miRN_3', 'Sk28_miR1_1', 'Sk28_miR1_2', 'Sk28_miR1_3', 'Sk28_miR2_1', 'Sk28_miR2_2', 'Sk28_miR2_3', 'Sk28_miRN_1', 'Sk28_miRN_2', 'Sk28_miRN_3']
+
+2024-06-27 20:02:15 	 about to clean M104_EV_1
+
+time java -jar /Users/adrian/software/Trimmomatic-0.39/trimmomatic-0.39.jar PE -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M104_EV_1/M104_EV_1_MKRN240004599-1A_227Y7HLT4_L7_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M104_EV_1/M104_EV_1_MKRN240004599-1A_227Y7HLT4_L7_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_EV_1/M104_EV_1_M104_EV_1_MKRN240004599-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_EV_1/M104_EV_1_M104_EV_1_MKRN240004599-1A_227Y7HLT4_L7_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_EV_1/M104_EV_1_M104_EV_1_MKRN240004599-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_EV_1/M104_EV_1_M104_EV_1_MKRN240004599-1A_227Y7HLT4_L7_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+
+TrimmomaticPE: Started with arguments:
+ -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M104_EV_1/M104_EV_1_MKRN240004599-1A_227Y7HLT4_L7_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M104_EV_1/M104_EV_1_MKRN240004599-1A_227Y7HLT4_L7_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_EV_1/M104_EV_1_M104_EV_1_MKRN240004599-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_EV_1/M104_EV_1_M104_EV_1_MKRN240004599-1A_227Y7HLT4_L7_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_EV_1/M104_EV_1_M104_EV_1_MKRN240004599-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_EV_1/M104_EV_1_M104_EV_1_MKRN240004599-1A_227Y7HLT4_L7_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTA'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC'
+Using Long Clipping Sequence: 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 18461335 Both Surviving: 18072791 (97.90%) Forward Only Surviving: 339059 (1.84%) Reverse Only Surviving: 39907 (0.22%) Dropped: 9578 (0.05%)
+TrimmomaticPE: Completed successfully
+
+real	8m26.565s
+user	24m0.978s
+sys	0m20.778s
+
+2024-06-27 20:10:41 	 about to clean M104_EV_1
+
+time java -jar /Users/adrian/software/Trimmomatic-0.39/trimmomatic-0.39.jar PE -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M104_EV_1/M104_EV_1_MKRN240004599-1A_22MFGHLT3_L3_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M104_EV_1/M104_EV_1_MKRN240004599-1A_22MFGHLT3_L3_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_EV_1/M104_EV_1_M104_EV_1_MKRN240004599-1A_22MFGHLT3_L3_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_EV_1/M104_EV_1_M104_EV_1_MKRN240004599-1A_22MFGHLT3_L3_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_EV_1/M104_EV_1_M104_EV_1_MKRN240004599-1A_22MFGHLT3_L3_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_EV_1/M104_EV_1_M104_EV_1_MKRN240004599-1A_22MFGHLT3_L3_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+
+TrimmomaticPE: Started with arguments:
+ -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M104_EV_1/M104_EV_1_MKRN240004599-1A_22MFGHLT3_L3_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M104_EV_1/M104_EV_1_MKRN240004599-1A_22MFGHLT3_L3_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_EV_1/M104_EV_1_M104_EV_1_MKRN240004599-1A_22MFGHLT3_L3_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_EV_1/M104_EV_1_M104_EV_1_MKRN240004599-1A_22MFGHLT3_L3_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_EV_1/M104_EV_1_M104_EV_1_MKRN240004599-1A_22MFGHLT3_L3_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_EV_1/M104_EV_1_M104_EV_1_MKRN240004599-1A_22MFGHLT3_L3_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTA'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC'
+Using Long Clipping Sequence: 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 3823329 Both Surviving: 3741650 (97.86%) Forward Only Surviving: 69975 (1.83%) Reverse Only Surviving: 8959 (0.23%) Dropped: 2745 (0.07%)
+TrimmomaticPE: Completed successfully
+
+real	1m43.150s
+user	4m54.043s
+sys	0m4.521s
+
+2024-06-27 20:12:25 	 about to clean M104_EV_2
+
+time java -jar /Users/adrian/software/Trimmomatic-0.39/trimmomatic-0.39.jar PE -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M104_EV_2/M104_EV_2_MKRN240004600-1A_227Y7HLT4_L7_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M104_EV_2/M104_EV_2_MKRN240004600-1A_227Y7HLT4_L7_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_EV_2/M104_EV_2_M104_EV_2_MKRN240004600-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_EV_2/M104_EV_2_M104_EV_2_MKRN240004600-1A_227Y7HLT4_L7_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_EV_2/M104_EV_2_M104_EV_2_MKRN240004600-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_EV_2/M104_EV_2_M104_EV_2_MKRN240004600-1A_227Y7HLT4_L7_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+
+TrimmomaticPE: Started with arguments:
+ -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M104_EV_2/M104_EV_2_MKRN240004600-1A_227Y7HLT4_L7_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M104_EV_2/M104_EV_2_MKRN240004600-1A_227Y7HLT4_L7_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_EV_2/M104_EV_2_M104_EV_2_MKRN240004600-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_EV_2/M104_EV_2_M104_EV_2_MKRN240004600-1A_227Y7HLT4_L7_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_EV_2/M104_EV_2_M104_EV_2_MKRN240004600-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_EV_2/M104_EV_2_M104_EV_2_MKRN240004600-1A_227Y7HLT4_L7_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTA'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC'
+Using Long Clipping Sequence: 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 20845831 Both Surviving: 20504285 (98.36%) Forward Only Surviving: 290376 (1.39%) Reverse Only Surviving: 41967 (0.20%) Dropped: 9203 (0.04%)
+TrimmomaticPE: Completed successfully
+
+real	47m59.231s
+user	26m40.137s
+sys	0m23.462s
+
+2024-06-27 21:00:24 	 about to clean M104_EV_3
+
+time java -jar /Users/adrian/software/Trimmomatic-0.39/trimmomatic-0.39.jar PE -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M104_EV_3/M104_EV_3_MKRN240004601-1A_227Y7HLT4_L7_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M104_EV_3/M104_EV_3_MKRN240004601-1A_227Y7HLT4_L7_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_EV_3/M104_EV_3_M104_EV_3_MKRN240004601-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_EV_3/M104_EV_3_M104_EV_3_MKRN240004601-1A_227Y7HLT4_L7_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_EV_3/M104_EV_3_M104_EV_3_MKRN240004601-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_EV_3/M104_EV_3_M104_EV_3_MKRN240004601-1A_227Y7HLT4_L7_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+
+TrimmomaticPE: Started with arguments:
+ -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M104_EV_3/M104_EV_3_MKRN240004601-1A_227Y7HLT4_L7_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M104_EV_3/M104_EV_3_MKRN240004601-1A_227Y7HLT4_L7_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_EV_3/M104_EV_3_M104_EV_3_MKRN240004601-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_EV_3/M104_EV_3_M104_EV_3_MKRN240004601-1A_227Y7HLT4_L7_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_EV_3/M104_EV_3_M104_EV_3_MKRN240004601-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_EV_3/M104_EV_3_M104_EV_3_MKRN240004601-1A_227Y7HLT4_L7_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTA'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC'
+Using Long Clipping Sequence: 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 23223092 Both Surviving: 22805062 (98.20%) Forward Only Surviving: 358588 (1.54%) Reverse Only Surviving: 48646 (0.21%) Dropped: 10796 (0.05%)
+TrimmomaticPE: Completed successfully
+
+real	67m25.730s
+user	29m34.252s
+sys	0m25.095s
+
+2024-06-27 22:07:50 	 about to clean M104_SET_1
+
+time java -jar /Users/adrian/software/Trimmomatic-0.39/trimmomatic-0.39.jar PE -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M104_SET_1/M104_SET_1_MKRN240004602-1A_227Y7HLT4_L7_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M104_SET_1/M104_SET_1_MKRN240004602-1A_227Y7HLT4_L7_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_SET_1/M104_SET_1_M104_SET_1_MKRN240004602-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_SET_1/M104_SET_1_M104_SET_1_MKRN240004602-1A_227Y7HLT4_L7_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_SET_1/M104_SET_1_M104_SET_1_MKRN240004602-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_SET_1/M104_SET_1_M104_SET_1_MKRN240004602-1A_227Y7HLT4_L7_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+
+TrimmomaticPE: Started with arguments:
+ -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M104_SET_1/M104_SET_1_MKRN240004602-1A_227Y7HLT4_L7_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M104_SET_1/M104_SET_1_MKRN240004602-1A_227Y7HLT4_L7_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_SET_1/M104_SET_1_M104_SET_1_MKRN240004602-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_SET_1/M104_SET_1_M104_SET_1_MKRN240004602-1A_227Y7HLT4_L7_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_SET_1/M104_SET_1_M104_SET_1_MKRN240004602-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_SET_1/M104_SET_1_M104_SET_1_MKRN240004602-1A_227Y7HLT4_L7_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTA'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC'
+Using Long Clipping Sequence: 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 23343049 Both Surviving: 22801711 (97.68%) Forward Only Surviving: 485792 (2.08%) Reverse Only Surviving: 46430 (0.20%) Dropped: 9116 (0.04%)
+TrimmomaticPE: Completed successfully
+
+real	65m8.581s
+user	30m17.233s
+sys	0m25.815s
+
+2024-06-27 23:12:58 	 about to clean M104_SET_2
+
+time java -jar /Users/adrian/software/Trimmomatic-0.39/trimmomatic-0.39.jar PE -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M104_SET_2/M104_SET_2_MKRN240004603-1A_227Y7HLT4_L7_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M104_SET_2/M104_SET_2_MKRN240004603-1A_227Y7HLT4_L7_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_SET_2/M104_SET_2_M104_SET_2_MKRN240004603-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_SET_2/M104_SET_2_M104_SET_2_MKRN240004603-1A_227Y7HLT4_L7_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_SET_2/M104_SET_2_M104_SET_2_MKRN240004603-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_SET_2/M104_SET_2_M104_SET_2_MKRN240004603-1A_227Y7HLT4_L7_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+
+TrimmomaticPE: Started with arguments:
+ -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M104_SET_2/M104_SET_2_MKRN240004603-1A_227Y7HLT4_L7_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M104_SET_2/M104_SET_2_MKRN240004603-1A_227Y7HLT4_L7_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_SET_2/M104_SET_2_M104_SET_2_MKRN240004603-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_SET_2/M104_SET_2_M104_SET_2_MKRN240004603-1A_227Y7HLT4_L7_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_SET_2/M104_SET_2_M104_SET_2_MKRN240004603-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_SET_2/M104_SET_2_M104_SET_2_MKRN240004603-1A_227Y7HLT4_L7_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTA'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC'
+Using Long Clipping Sequence: 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 34552943 Both Surviving: 33968864 (98.31%) Forward Only Surviving: 501178 (1.45%) Reverse Only Surviving: 67999 (0.20%) Dropped: 14902 (0.04%)
+TrimmomaticPE: Completed successfully
+
+real	107m17.647s
+user	43m59.744s
+sys	0m37.034s
+
+2024-06-28 01:00:16 	 about to clean M104_SET_3
+
+time java -jar /Users/adrian/software/Trimmomatic-0.39/trimmomatic-0.39.jar PE -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M104_SET_3/M104_SET_3_MKRN240004604-1A_227Y7HLT4_L7_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M104_SET_3/M104_SET_3_MKRN240004604-1A_227Y7HLT4_L7_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_SET_3/M104_SET_3_M104_SET_3_MKRN240004604-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_SET_3/M104_SET_3_M104_SET_3_MKRN240004604-1A_227Y7HLT4_L7_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_SET_3/M104_SET_3_M104_SET_3_MKRN240004604-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_SET_3/M104_SET_3_M104_SET_3_MKRN240004604-1A_227Y7HLT4_L7_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+
+TrimmomaticPE: Started with arguments:
+ -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M104_SET_3/M104_SET_3_MKRN240004604-1A_227Y7HLT4_L7_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M104_SET_3/M104_SET_3_MKRN240004604-1A_227Y7HLT4_L7_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_SET_3/M104_SET_3_M104_SET_3_MKRN240004604-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_SET_3/M104_SET_3_M104_SET_3_MKRN240004604-1A_227Y7HLT4_L7_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_SET_3/M104_SET_3_M104_SET_3_MKRN240004604-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M104_SET_3/M104_SET_3_M104_SET_3_MKRN240004604-1A_227Y7HLT4_L7_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTA'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC'
+Using Long Clipping Sequence: 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 22427138 Both Surviving: 21909280 (97.69%) Forward Only Surviving: 458009 (2.04%) Reverse Only Surviving: 47989 (0.21%) Dropped: 11860 (0.05%)
+TrimmomaticPE: Completed successfully
+
+real	62m50.270s
+user	28m41.820s
+sys	0m24.217s
+
+2024-06-28 02:03:06 	 about to clean M501_miR1_1
+
+time java -jar /Users/adrian/software/Trimmomatic-0.39/trimmomatic-0.39.jar PE -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M501_miR1_1/M501_miR1_1_MKRN240004593-1A_227Y7HLT4_L7_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M501_miR1_1/M501_miR1_1_MKRN240004593-1A_227Y7HLT4_L7_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miR1_1/M501_miR1_1_M501_miR1_1_MKRN240004593-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miR1_1/M501_miR1_1_M501_miR1_1_MKRN240004593-1A_227Y7HLT4_L7_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miR1_1/M501_miR1_1_M501_miR1_1_MKRN240004593-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miR1_1/M501_miR1_1_M501_miR1_1_MKRN240004593-1A_227Y7HLT4_L7_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+
+TrimmomaticPE: Started with arguments:
+ -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M501_miR1_1/M501_miR1_1_MKRN240004593-1A_227Y7HLT4_L7_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M501_miR1_1/M501_miR1_1_MKRN240004593-1A_227Y7HLT4_L7_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miR1_1/M501_miR1_1_M501_miR1_1_MKRN240004593-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miR1_1/M501_miR1_1_M501_miR1_1_MKRN240004593-1A_227Y7HLT4_L7_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miR1_1/M501_miR1_1_M501_miR1_1_MKRN240004593-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miR1_1/M501_miR1_1_M501_miR1_1_MKRN240004593-1A_227Y7HLT4_L7_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTA'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC'
+Using Long Clipping Sequence: 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 22732601 Both Surviving: 22292571 (98.06%) Forward Only Surviving: 379275 (1.67%) Reverse Only Surviving: 49567 (0.22%) Dropped: 11188 (0.05%)
+TrimmomaticPE: Completed successfully
+
+real	41m12.120s
+user	29m17.498s
+sys	0m24.802s
+
+2024-06-28 02:44:18 	 about to clean M501_miR1_2
+
+time java -jar /Users/adrian/software/Trimmomatic-0.39/trimmomatic-0.39.jar PE -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M501_miR1_2/M501_miR1_2_MKRN240004594-1A_227Y7HLT4_L7_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M501_miR1_2/M501_miR1_2_MKRN240004594-1A_227Y7HLT4_L7_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miR1_2/M501_miR1_2_M501_miR1_2_MKRN240004594-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miR1_2/M501_miR1_2_M501_miR1_2_MKRN240004594-1A_227Y7HLT4_L7_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miR1_2/M501_miR1_2_M501_miR1_2_MKRN240004594-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miR1_2/M501_miR1_2_M501_miR1_2_MKRN240004594-1A_227Y7HLT4_L7_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+
+TrimmomaticPE: Started with arguments:
+ -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M501_miR1_2/M501_miR1_2_MKRN240004594-1A_227Y7HLT4_L7_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M501_miR1_2/M501_miR1_2_MKRN240004594-1A_227Y7HLT4_L7_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miR1_2/M501_miR1_2_M501_miR1_2_MKRN240004594-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miR1_2/M501_miR1_2_M501_miR1_2_MKRN240004594-1A_227Y7HLT4_L7_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miR1_2/M501_miR1_2_M501_miR1_2_MKRN240004594-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miR1_2/M501_miR1_2_M501_miR1_2_MKRN240004594-1A_227Y7HLT4_L7_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTA'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC'
+Using Long Clipping Sequence: 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 25146050 Both Surviving: 24739172 (98.38%) Forward Only Surviving: 341738 (1.36%) Reverse Only Surviving: 54378 (0.22%) Dropped: 10762 (0.04%)
+TrimmomaticPE: Completed successfully
+
+real	78m16.326s
+user	32m56.533s
+sys	0m27.378s
+
+2024-06-28 04:02:35 	 about to clean M501_miR1_3
+
+time java -jar /Users/adrian/software/Trimmomatic-0.39/trimmomatic-0.39.jar PE -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M501_miR1_3/M501_miR1_3_MKRN240004595-1A_227Y7HLT4_L7_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M501_miR1_3/M501_miR1_3_MKRN240004595-1A_227Y7HLT4_L7_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miR1_3/M501_miR1_3_M501_miR1_3_MKRN240004595-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miR1_3/M501_miR1_3_M501_miR1_3_MKRN240004595-1A_227Y7HLT4_L7_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miR1_3/M501_miR1_3_M501_miR1_3_MKRN240004595-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miR1_3/M501_miR1_3_M501_miR1_3_MKRN240004595-1A_227Y7HLT4_L7_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+
+TrimmomaticPE: Started with arguments:
+ -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M501_miR1_3/M501_miR1_3_MKRN240004595-1A_227Y7HLT4_L7_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M501_miR1_3/M501_miR1_3_MKRN240004595-1A_227Y7HLT4_L7_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miR1_3/M501_miR1_3_M501_miR1_3_MKRN240004595-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miR1_3/M501_miR1_3_M501_miR1_3_MKRN240004595-1A_227Y7HLT4_L7_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miR1_3/M501_miR1_3_M501_miR1_3_MKRN240004595-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miR1_3/M501_miR1_3_M501_miR1_3_MKRN240004595-1A_227Y7HLT4_L7_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTA'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC'
+Using Long Clipping Sequence: 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 22289625 Both Surviving: 21887546 (98.20%) Forward Only Surviving: 342882 (1.54%) Reverse Only Surviving: 48038 (0.22%) Dropped: 11159 (0.05%)
+TrimmomaticPE: Completed successfully
+
+real	61m46.213s
+user	28m34.887s
+sys	0m24.003s
+
+2024-06-28 05:04:21 	 about to clean M501_miR2_1
+
+time java -jar /Users/adrian/software/Trimmomatic-0.39/trimmomatic-0.39.jar PE -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M501_miR2_1/M501_miR2_1_MKRN240004596-1A_227Y7HLT4_L7_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M501_miR2_1/M501_miR2_1_MKRN240004596-1A_227Y7HLT4_L7_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miR2_1/M501_miR2_1_M501_miR2_1_MKRN240004596-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miR2_1/M501_miR2_1_M501_miR2_1_MKRN240004596-1A_227Y7HLT4_L7_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miR2_1/M501_miR2_1_M501_miR2_1_MKRN240004596-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miR2_1/M501_miR2_1_M501_miR2_1_MKRN240004596-1A_227Y7HLT4_L7_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+
+TrimmomaticPE: Started with arguments:
+ -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M501_miR2_1/M501_miR2_1_MKRN240004596-1A_227Y7HLT4_L7_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M501_miR2_1/M501_miR2_1_MKRN240004596-1A_227Y7HLT4_L7_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miR2_1/M501_miR2_1_M501_miR2_1_MKRN240004596-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miR2_1/M501_miR2_1_M501_miR2_1_MKRN240004596-1A_227Y7HLT4_L7_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miR2_1/M501_miR2_1_M501_miR2_1_MKRN240004596-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miR2_1/M501_miR2_1_M501_miR2_1_MKRN240004596-1A_227Y7HLT4_L7_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTA'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC'
+Using Long Clipping Sequence: 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 23586778 Both Surviving: 23133659 (98.08%) Forward Only Surviving: 391651 (1.66%) Reverse Only Surviving: 51116 (0.22%) Dropped: 10352 (0.04%)
+TrimmomaticPE: Completed successfully
+
+real	78m3.640s
+user	30m28.739s
+sys	0m25.353s
+
+2024-06-28 06:22:24 	 about to clean M501_miR2_2
+
+time java -jar /Users/adrian/software/Trimmomatic-0.39/trimmomatic-0.39.jar PE -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M501_miR2_2/M501_miR2_2_MKRN240004597-1A_227Y7HLT4_L7_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M501_miR2_2/M501_miR2_2_MKRN240004597-1A_227Y7HLT4_L7_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miR2_2/M501_miR2_2_M501_miR2_2_MKRN240004597-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miR2_2/M501_miR2_2_M501_miR2_2_MKRN240004597-1A_227Y7HLT4_L7_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miR2_2/M501_miR2_2_M501_miR2_2_MKRN240004597-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miR2_2/M501_miR2_2_M501_miR2_2_MKRN240004597-1A_227Y7HLT4_L7_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+
+TrimmomaticPE: Started with arguments:
+ -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M501_miR2_2/M501_miR2_2_MKRN240004597-1A_227Y7HLT4_L7_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M501_miR2_2/M501_miR2_2_MKRN240004597-1A_227Y7HLT4_L7_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miR2_2/M501_miR2_2_M501_miR2_2_MKRN240004597-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miR2_2/M501_miR2_2_M501_miR2_2_MKRN240004597-1A_227Y7HLT4_L7_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miR2_2/M501_miR2_2_M501_miR2_2_MKRN240004597-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miR2_2/M501_miR2_2_M501_miR2_2_MKRN240004597-1A_227Y7HLT4_L7_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTA'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC'
+Using Long Clipping Sequence: 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 23644712 Both Surviving: 23158223 (97.94%) Forward Only Surviving: 423912 (1.79%) Reverse Only Surviving: 51369 (0.22%) Dropped: 11208 (0.05%)
+TrimmomaticPE: Completed successfully
+
+real	12m15.536s
+user	30m57.604s
+sys	0m27.769s
+
+2024-06-28 06:34:40 	 about to clean M501_miR2_3
+
+time java -jar /Users/adrian/software/Trimmomatic-0.39/trimmomatic-0.39.jar PE -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M501_miR2_3/M501_miR2_3_MKRN240004598-1A_227Y7HLT4_L7_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M501_miR2_3/M501_miR2_3_MKRN240004598-1A_227Y7HLT4_L7_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miR2_3/M501_miR2_3_M501_miR2_3_MKRN240004598-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miR2_3/M501_miR2_3_M501_miR2_3_MKRN240004598-1A_227Y7HLT4_L7_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miR2_3/M501_miR2_3_M501_miR2_3_MKRN240004598-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miR2_3/M501_miR2_3_M501_miR2_3_MKRN240004598-1A_227Y7HLT4_L7_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+
+TrimmomaticPE: Started with arguments:
+ -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M501_miR2_3/M501_miR2_3_MKRN240004598-1A_227Y7HLT4_L7_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M501_miR2_3/M501_miR2_3_MKRN240004598-1A_227Y7HLT4_L7_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miR2_3/M501_miR2_3_M501_miR2_3_MKRN240004598-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miR2_3/M501_miR2_3_M501_miR2_3_MKRN240004598-1A_227Y7HLT4_L7_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miR2_3/M501_miR2_3_M501_miR2_3_MKRN240004598-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miR2_3/M501_miR2_3_M501_miR2_3_MKRN240004598-1A_227Y7HLT4_L7_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTA'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC'
+Using Long Clipping Sequence: 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 22284032 Both Surviving: 21801388 (97.83%) Forward Only Surviving: 419348 (1.88%) Reverse Only Surviving: 50859 (0.23%) Dropped: 12437 (0.06%)
+TrimmomaticPE: Completed successfully
+
+real	10m34.115s
+user	28m58.595s
+sys	0m27.900s
+
+2024-06-28 06:45:14 	 about to clean M501_miRN_1
+
+time java -jar /Users/adrian/software/Trimmomatic-0.39/trimmomatic-0.39.jar PE -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M501_miRN_1/M501_miRN_1_MKRN240004590-1A_227Y7HLT4_L7_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M501_miRN_1/M501_miRN_1_MKRN240004590-1A_227Y7HLT4_L7_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miRN_1/M501_miRN_1_M501_miRN_1_MKRN240004590-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miRN_1/M501_miRN_1_M501_miRN_1_MKRN240004590-1A_227Y7HLT4_L7_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miRN_1/M501_miRN_1_M501_miRN_1_MKRN240004590-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miRN_1/M501_miRN_1_M501_miRN_1_MKRN240004590-1A_227Y7HLT4_L7_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+
+TrimmomaticPE: Started with arguments:
+ -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M501_miRN_1/M501_miRN_1_MKRN240004590-1A_227Y7HLT4_L7_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M501_miRN_1/M501_miRN_1_MKRN240004590-1A_227Y7HLT4_L7_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miRN_1/M501_miRN_1_M501_miRN_1_MKRN240004590-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miRN_1/M501_miRN_1_M501_miRN_1_MKRN240004590-1A_227Y7HLT4_L7_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miRN_1/M501_miRN_1_M501_miRN_1_MKRN240004590-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miRN_1/M501_miRN_1_M501_miRN_1_MKRN240004590-1A_227Y7HLT4_L7_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTA'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC'
+Using Long Clipping Sequence: 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 21629803 Both Surviving: 21237203 (98.18%) Forward Only Surviving: 336492 (1.56%) Reverse Only Surviving: 46894 (0.22%) Dropped: 9214 (0.04%)
+TrimmomaticPE: Completed successfully
+
+real	10m9.969s
+user	28m24.657s
+sys	0m26.281s
+
+2024-06-28 06:55:24 	 about to clean M501_miRN_2
+
+time java -jar /Users/adrian/software/Trimmomatic-0.39/trimmomatic-0.39.jar PE -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M501_miRN_2/M501_miRN_2_MKRN240004591-1A_227Y7HLT4_L7_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M501_miRN_2/M501_miRN_2_MKRN240004591-1A_227Y7HLT4_L7_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miRN_2/M501_miRN_2_M501_miRN_2_MKRN240004591-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miRN_2/M501_miRN_2_M501_miRN_2_MKRN240004591-1A_227Y7HLT4_L7_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miRN_2/M501_miRN_2_M501_miRN_2_MKRN240004591-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miRN_2/M501_miRN_2_M501_miRN_2_MKRN240004591-1A_227Y7HLT4_L7_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+
+TrimmomaticPE: Started with arguments:
+ -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M501_miRN_2/M501_miRN_2_MKRN240004591-1A_227Y7HLT4_L7_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M501_miRN_2/M501_miRN_2_MKRN240004591-1A_227Y7HLT4_L7_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miRN_2/M501_miRN_2_M501_miRN_2_MKRN240004591-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miRN_2/M501_miRN_2_M501_miRN_2_MKRN240004591-1A_227Y7HLT4_L7_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miRN_2/M501_miRN_2_M501_miRN_2_MKRN240004591-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miRN_2/M501_miRN_2_M501_miRN_2_MKRN240004591-1A_227Y7HLT4_L7_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTA'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC'
+Using Long Clipping Sequence: 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 20369981 Both Surviving: 19995008 (98.16%) Forward Only Surviving: 325121 (1.60%) Reverse Only Surviving: 40915 (0.20%) Dropped: 8937 (0.04%)
+TrimmomaticPE: Completed successfully
+
+real	9m13.258s
+user	26m0.617s
+sys	0m23.339s
+
+2024-06-28 07:04:37 	 about to clean M501_miRN_3
+
+time java -jar /Users/adrian/software/Trimmomatic-0.39/trimmomatic-0.39.jar PE -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M501_miRN_3/M501_miRN_3_MKRN240004592-1A_227Y7HLT4_L7_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M501_miRN_3/M501_miRN_3_MKRN240004592-1A_227Y7HLT4_L7_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miRN_3/M501_miRN_3_M501_miRN_3_MKRN240004592-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miRN_3/M501_miRN_3_M501_miRN_3_MKRN240004592-1A_227Y7HLT4_L7_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miRN_3/M501_miRN_3_M501_miRN_3_MKRN240004592-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miRN_3/M501_miRN_3_M501_miRN_3_MKRN240004592-1A_227Y7HLT4_L7_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+
+TrimmomaticPE: Started with arguments:
+ -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M501_miRN_3/M501_miRN_3_MKRN240004592-1A_227Y7HLT4_L7_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/M501_miRN_3/M501_miRN_3_MKRN240004592-1A_227Y7HLT4_L7_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miRN_3/M501_miRN_3_M501_miRN_3_MKRN240004592-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miRN_3/M501_miRN_3_M501_miRN_3_MKRN240004592-1A_227Y7HLT4_L7_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miRN_3/M501_miRN_3_M501_miRN_3_MKRN240004592-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/M501_miRN_3/M501_miRN_3_M501_miRN_3_MKRN240004592-1A_227Y7HLT4_L7_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTA'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC'
+Using Long Clipping Sequence: 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 21996731 Both Surviving: 21588081 (98.14%) Forward Only Surviving: 352036 (1.60%) Reverse Only Surviving: 47164 (0.21%) Dropped: 9450 (0.04%)
+TrimmomaticPE: Completed successfully
+
+real	10m28.410s
+user	28m53.199s
+sys	0m27.099s
+
+2024-06-28 07:15:06 	 about to clean Sk28_miR1_1
+
+time java -jar /Users/adrian/software/Trimmomatic-0.39/trimmomatic-0.39.jar PE -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/Sk28_miR1_1/Sk28_miR1_1_MKRN240004584-1A_227Y7HLT4_L7_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/Sk28_miR1_1/Sk28_miR1_1_MKRN240004584-1A_227Y7HLT4_L7_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR1_1/Sk28_miR1_1_Sk28_miR1_1_MKRN240004584-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR1_1/Sk28_miR1_1_Sk28_miR1_1_MKRN240004584-1A_227Y7HLT4_L7_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR1_1/Sk28_miR1_1_Sk28_miR1_1_MKRN240004584-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR1_1/Sk28_miR1_1_Sk28_miR1_1_MKRN240004584-1A_227Y7HLT4_L7_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+
+TrimmomaticPE: Started with arguments:
+ -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/Sk28_miR1_1/Sk28_miR1_1_MKRN240004584-1A_227Y7HLT4_L7_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/Sk28_miR1_1/Sk28_miR1_1_MKRN240004584-1A_227Y7HLT4_L7_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR1_1/Sk28_miR1_1_Sk28_miR1_1_MKRN240004584-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR1_1/Sk28_miR1_1_Sk28_miR1_1_MKRN240004584-1A_227Y7HLT4_L7_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR1_1/Sk28_miR1_1_Sk28_miR1_1_MKRN240004584-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR1_1/Sk28_miR1_1_Sk28_miR1_1_MKRN240004584-1A_227Y7HLT4_L7_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTA'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC'
+Using Long Clipping Sequence: 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 21260137 Both Surviving: 20871387 (98.17%) Forward Only Surviving: 331031 (1.56%) Reverse Only Surviving: 46724 (0.22%) Dropped: 10995 (0.05%)
+TrimmomaticPE: Completed successfully
+
+real	10m7.098s
+user	27m44.113s
+sys	0m27.181s
+
+2024-06-28 07:25:13 	 about to clean Sk28_miR1_2
+
+time java -jar /Users/adrian/software/Trimmomatic-0.39/trimmomatic-0.39.jar PE -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/Sk28_miR1_2/Sk28_miR1_2_MKRN240004585-1A_227Y7HLT4_L7_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/Sk28_miR1_2/Sk28_miR1_2_MKRN240004585-1A_227Y7HLT4_L7_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR1_2/Sk28_miR1_2_Sk28_miR1_2_MKRN240004585-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR1_2/Sk28_miR1_2_Sk28_miR1_2_MKRN240004585-1A_227Y7HLT4_L7_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR1_2/Sk28_miR1_2_Sk28_miR1_2_MKRN240004585-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR1_2/Sk28_miR1_2_Sk28_miR1_2_MKRN240004585-1A_227Y7HLT4_L7_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+
+TrimmomaticPE: Started with arguments:
+ -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/Sk28_miR1_2/Sk28_miR1_2_MKRN240004585-1A_227Y7HLT4_L7_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/Sk28_miR1_2/Sk28_miR1_2_MKRN240004585-1A_227Y7HLT4_L7_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR1_2/Sk28_miR1_2_Sk28_miR1_2_MKRN240004585-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR1_2/Sk28_miR1_2_Sk28_miR1_2_MKRN240004585-1A_227Y7HLT4_L7_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR1_2/Sk28_miR1_2_Sk28_miR1_2_MKRN240004585-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR1_2/Sk28_miR1_2_Sk28_miR1_2_MKRN240004585-1A_227Y7HLT4_L7_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTA'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC'
+Using Long Clipping Sequence: 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 21483966 Both Surviving: 21057977 (98.02%) Forward Only Surviving: 367410 (1.71%) Reverse Only Surviving: 47580 (0.22%) Dropped: 10999 (0.05%)
+TrimmomaticPE: Completed successfully
+
+real	10m21.617s
+user	28m13.822s
+sys	0m28.039s
+
+2024-06-28 07:35:35 	 about to clean Sk28_miR1_3
+
+time java -jar /Users/adrian/software/Trimmomatic-0.39/trimmomatic-0.39.jar PE -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/Sk28_miR1_3/Sk28_miR1_3_MKRN240004586-1A_227Y7HLT4_L7_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/Sk28_miR1_3/Sk28_miR1_3_MKRN240004586-1A_227Y7HLT4_L7_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR1_3/Sk28_miR1_3_Sk28_miR1_3_MKRN240004586-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR1_3/Sk28_miR1_3_Sk28_miR1_3_MKRN240004586-1A_227Y7HLT4_L7_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR1_3/Sk28_miR1_3_Sk28_miR1_3_MKRN240004586-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR1_3/Sk28_miR1_3_Sk28_miR1_3_MKRN240004586-1A_227Y7HLT4_L7_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+
+TrimmomaticPE: Started with arguments:
+ -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/Sk28_miR1_3/Sk28_miR1_3_MKRN240004586-1A_227Y7HLT4_L7_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/Sk28_miR1_3/Sk28_miR1_3_MKRN240004586-1A_227Y7HLT4_L7_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR1_3/Sk28_miR1_3_Sk28_miR1_3_MKRN240004586-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR1_3/Sk28_miR1_3_Sk28_miR1_3_MKRN240004586-1A_227Y7HLT4_L7_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR1_3/Sk28_miR1_3_Sk28_miR1_3_MKRN240004586-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR1_3/Sk28_miR1_3_Sk28_miR1_3_MKRN240004586-1A_227Y7HLT4_L7_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTA'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC'
+Using Long Clipping Sequence: 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 20427726 Both Surviving: 20065929 (98.23%) Forward Only Surviving: 304946 (1.49%) Reverse Only Surviving: 45615 (0.22%) Dropped: 11236 (0.06%)
+TrimmomaticPE: Completed successfully
+
+real	9m52.983s
+user	27m14.835s
+sys	0m25.727s
+
+2024-06-28 07:45:28 	 about to clean Sk28_miR2_1
+
+time java -jar /Users/adrian/software/Trimmomatic-0.39/trimmomatic-0.39.jar PE -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/Sk28_miR2_1/Sk28_miR2_1_MKRN240004587-1A_227Y7HLT4_L7_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/Sk28_miR2_1/Sk28_miR2_1_MKRN240004587-1A_227Y7HLT4_L7_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR2_1/Sk28_miR2_1_Sk28_miR2_1_MKRN240004587-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR2_1/Sk28_miR2_1_Sk28_miR2_1_MKRN240004587-1A_227Y7HLT4_L7_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR2_1/Sk28_miR2_1_Sk28_miR2_1_MKRN240004587-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR2_1/Sk28_miR2_1_Sk28_miR2_1_MKRN240004587-1A_227Y7HLT4_L7_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+
+TrimmomaticPE: Started with arguments:
+ -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/Sk28_miR2_1/Sk28_miR2_1_MKRN240004587-1A_227Y7HLT4_L7_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/Sk28_miR2_1/Sk28_miR2_1_MKRN240004587-1A_227Y7HLT4_L7_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR2_1/Sk28_miR2_1_Sk28_miR2_1_MKRN240004587-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR2_1/Sk28_miR2_1_Sk28_miR2_1_MKRN240004587-1A_227Y7HLT4_L7_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR2_1/Sk28_miR2_1_Sk28_miR2_1_MKRN240004587-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR2_1/Sk28_miR2_1_Sk28_miR2_1_MKRN240004587-1A_227Y7HLT4_L7_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTA'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC'
+Using Long Clipping Sequence: 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 16207171 Both Surviving: 15900097 (98.11%) Forward Only Surviving: 266905 (1.65%) Reverse Only Surviving: 33079 (0.20%) Dropped: 7090 (0.04%)
+TrimmomaticPE: Completed successfully
+
+real	7m51.482s
+user	21m46.986s
+sys	0m20.942s
+
+2024-06-28 07:53:19 	 about to clean Sk28_miR2_1
+
+time java -jar /Users/adrian/software/Trimmomatic-0.39/trimmomatic-0.39.jar PE -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/Sk28_miR2_1/Sk28_miR2_1_MKRN240004587-1A_22MFGHLT3_L3_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/Sk28_miR2_1/Sk28_miR2_1_MKRN240004587-1A_22MFGHLT3_L3_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR2_1/Sk28_miR2_1_Sk28_miR2_1_MKRN240004587-1A_22MFGHLT3_L3_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR2_1/Sk28_miR2_1_Sk28_miR2_1_MKRN240004587-1A_22MFGHLT3_L3_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR2_1/Sk28_miR2_1_Sk28_miR2_1_MKRN240004587-1A_22MFGHLT3_L3_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR2_1/Sk28_miR2_1_Sk28_miR2_1_MKRN240004587-1A_22MFGHLT3_L3_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+
+TrimmomaticPE: Started with arguments:
+ -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/Sk28_miR2_1/Sk28_miR2_1_MKRN240004587-1A_22MFGHLT3_L3_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/Sk28_miR2_1/Sk28_miR2_1_MKRN240004587-1A_22MFGHLT3_L3_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR2_1/Sk28_miR2_1_Sk28_miR2_1_MKRN240004587-1A_22MFGHLT3_L3_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR2_1/Sk28_miR2_1_Sk28_miR2_1_MKRN240004587-1A_22MFGHLT3_L3_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR2_1/Sk28_miR2_1_Sk28_miR2_1_MKRN240004587-1A_22MFGHLT3_L3_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR2_1/Sk28_miR2_1_Sk28_miR2_1_MKRN240004587-1A_22MFGHLT3_L3_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTA'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC'
+Using Long Clipping Sequence: 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 5387496 Both Surviving: 5286178 (98.12%) Forward Only Surviving: 87730 (1.63%) Reverse Only Surviving: 10508 (0.20%) Dropped: 3080 (0.06%)
+TrimmomaticPE: Completed successfully
+
+real	2m31.243s
+user	7m8.274s
+sys	0m6.423s
+
+2024-06-28 07:55:50 	 about to clean Sk28_miR2_2
+
+time java -jar /Users/adrian/software/Trimmomatic-0.39/trimmomatic-0.39.jar PE -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/Sk28_miR2_2/Sk28_miR2_2_MKRN240004588-1A_227Y7HLT4_L7_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/Sk28_miR2_2/Sk28_miR2_2_MKRN240004588-1A_227Y7HLT4_L7_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR2_2/Sk28_miR2_2_Sk28_miR2_2_MKRN240004588-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR2_2/Sk28_miR2_2_Sk28_miR2_2_MKRN240004588-1A_227Y7HLT4_L7_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR2_2/Sk28_miR2_2_Sk28_miR2_2_MKRN240004588-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR2_2/Sk28_miR2_2_Sk28_miR2_2_MKRN240004588-1A_227Y7HLT4_L7_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+
+TrimmomaticPE: Started with arguments:
+ -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/Sk28_miR2_2/Sk28_miR2_2_MKRN240004588-1A_227Y7HLT4_L7_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/Sk28_miR2_2/Sk28_miR2_2_MKRN240004588-1A_227Y7HLT4_L7_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR2_2/Sk28_miR2_2_Sk28_miR2_2_MKRN240004588-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR2_2/Sk28_miR2_2_Sk28_miR2_2_MKRN240004588-1A_227Y7HLT4_L7_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR2_2/Sk28_miR2_2_Sk28_miR2_2_MKRN240004588-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR2_2/Sk28_miR2_2_Sk28_miR2_2_MKRN240004588-1A_227Y7HLT4_L7_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTA'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC'
+Using Long Clipping Sequence: 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 19167210 Both Surviving: 18762023 (97.89%) Forward Only Surviving: 350918 (1.83%) Reverse Only Surviving: 43655 (0.23%) Dropped: 10614 (0.06%)
+TrimmomaticPE: Completed successfully
+
+real	9m35.160s
+user	26m14.527s
+sys	0m25.136s
+
+2024-06-28 08:05:25 	 about to clean Sk28_miR2_2
+
+time java -jar /Users/adrian/software/Trimmomatic-0.39/trimmomatic-0.39.jar PE -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/Sk28_miR2_2/Sk28_miR2_2_MKRN240004588-1A_22MFGHLT3_L3_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/Sk28_miR2_2/Sk28_miR2_2_MKRN240004588-1A_22MFGHLT3_L3_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR2_2/Sk28_miR2_2_Sk28_miR2_2_MKRN240004588-1A_22MFGHLT3_L3_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR2_2/Sk28_miR2_2_Sk28_miR2_2_MKRN240004588-1A_22MFGHLT3_L3_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR2_2/Sk28_miR2_2_Sk28_miR2_2_MKRN240004588-1A_22MFGHLT3_L3_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR2_2/Sk28_miR2_2_Sk28_miR2_2_MKRN240004588-1A_22MFGHLT3_L3_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+
+TrimmomaticPE: Started with arguments:
+ -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/Sk28_miR2_2/Sk28_miR2_2_MKRN240004588-1A_22MFGHLT3_L3_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/Sk28_miR2_2/Sk28_miR2_2_MKRN240004588-1A_22MFGHLT3_L3_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR2_2/Sk28_miR2_2_Sk28_miR2_2_MKRN240004588-1A_22MFGHLT3_L3_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR2_2/Sk28_miR2_2_Sk28_miR2_2_MKRN240004588-1A_22MFGHLT3_L3_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR2_2/Sk28_miR2_2_Sk28_miR2_2_MKRN240004588-1A_22MFGHLT3_L3_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR2_2/Sk28_miR2_2_Sk28_miR2_2_MKRN240004588-1A_22MFGHLT3_L3_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTA'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC'
+Using Long Clipping Sequence: 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 4236044 Both Surviving: 4146189 (97.88%) Forward Only Surviving: 77069 (1.82%) Reverse Only Surviving: 9486 (0.22%) Dropped: 3300 (0.08%)
+TrimmomaticPE: Completed successfully
+
+real	41m10.886s
+user	5m31.757s
+sys	0m5.990s
+
+2024-06-28 08:46:36 	 about to clean Sk28_miR2_3
+
+time java -jar /Users/adrian/software/Trimmomatic-0.39/trimmomatic-0.39.jar PE -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/Sk28_miR2_3/Sk28_miR2_3_MKRN240004589-1A_227Y7HLT4_L7_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/Sk28_miR2_3/Sk28_miR2_3_MKRN240004589-1A_227Y7HLT4_L7_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR2_3/Sk28_miR2_3_Sk28_miR2_3_MKRN240004589-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR2_3/Sk28_miR2_3_Sk28_miR2_3_MKRN240004589-1A_227Y7HLT4_L7_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR2_3/Sk28_miR2_3_Sk28_miR2_3_MKRN240004589-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR2_3/Sk28_miR2_3_Sk28_miR2_3_MKRN240004589-1A_227Y7HLT4_L7_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+
+TrimmomaticPE: Started with arguments:
+ -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/Sk28_miR2_3/Sk28_miR2_3_MKRN240004589-1A_227Y7HLT4_L7_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/Sk28_miR2_3/Sk28_miR2_3_MKRN240004589-1A_227Y7HLT4_L7_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR2_3/Sk28_miR2_3_Sk28_miR2_3_MKRN240004589-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR2_3/Sk28_miR2_3_Sk28_miR2_3_MKRN240004589-1A_227Y7HLT4_L7_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR2_3/Sk28_miR2_3_Sk28_miR2_3_MKRN240004589-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miR2_3/Sk28_miR2_3_Sk28_miR2_3_MKRN240004589-1A_227Y7HLT4_L7_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTA'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC'
+Using Long Clipping Sequence: 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 21066460 Both Surviving: 20640748 (97.98%) Forward Only Surviving: 366399 (1.74%) Reverse Only Surviving: 47649 (0.23%) Dropped: 11664 (0.06%)
+TrimmomaticPE: Completed successfully
+
+real	10m3.182s
+user	27m28.252s
+sys	0m27.007s
+
+2024-06-28 08:56:40 	 about to clean Sk28_miRN_1
+
+time java -jar /Users/adrian/software/Trimmomatic-0.39/trimmomatic-0.39.jar PE -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/Sk28_miRN_1/Sk28_miRN_1_MKRN240004581-1A_227Y7HLT4_L7_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/Sk28_miRN_1/Sk28_miRN_1_MKRN240004581-1A_227Y7HLT4_L7_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miRN_1/Sk28_miRN_1_Sk28_miRN_1_MKRN240004581-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miRN_1/Sk28_miRN_1_Sk28_miRN_1_MKRN240004581-1A_227Y7HLT4_L7_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miRN_1/Sk28_miRN_1_Sk28_miRN_1_MKRN240004581-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miRN_1/Sk28_miRN_1_Sk28_miRN_1_MKRN240004581-1A_227Y7HLT4_L7_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+
+TrimmomaticPE: Started with arguments:
+ -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/Sk28_miRN_1/Sk28_miRN_1_MKRN240004581-1A_227Y7HLT4_L7_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/Sk28_miRN_1/Sk28_miRN_1_MKRN240004581-1A_227Y7HLT4_L7_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miRN_1/Sk28_miRN_1_Sk28_miRN_1_MKRN240004581-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miRN_1/Sk28_miRN_1_Sk28_miRN_1_MKRN240004581-1A_227Y7HLT4_L7_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miRN_1/Sk28_miRN_1_Sk28_miRN_1_MKRN240004581-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miRN_1/Sk28_miRN_1_Sk28_miRN_1_MKRN240004581-1A_227Y7HLT4_L7_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTA'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC'
+Using Long Clipping Sequence: 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 26806296 Both Surviving: 26342883 (98.27%) Forward Only Surviving: 390762 (1.46%) Reverse Only Surviving: 59517 (0.22%) Dropped: 13134 (0.05%)
+TrimmomaticPE: Completed successfully
+
+real	12m23.296s
+user	34m42.704s
+sys	0m31.224s
+
+2024-06-28 09:09:03 	 about to clean Sk28_miRN_2
+
+time java -jar /Users/adrian/software/Trimmomatic-0.39/trimmomatic-0.39.jar PE -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/Sk28_miRN_2/Sk28_miRN_2_MKRN240004582-1A_227Y7HLT4_L7_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/Sk28_miRN_2/Sk28_miRN_2_MKRN240004582-1A_227Y7HLT4_L7_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miRN_2/Sk28_miRN_2_Sk28_miRN_2_MKRN240004582-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miRN_2/Sk28_miRN_2_Sk28_miRN_2_MKRN240004582-1A_227Y7HLT4_L7_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miRN_2/Sk28_miRN_2_Sk28_miRN_2_MKRN240004582-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miRN_2/Sk28_miRN_2_Sk28_miRN_2_MKRN240004582-1A_227Y7HLT4_L7_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+
+TrimmomaticPE: Started with arguments:
+ -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/Sk28_miRN_2/Sk28_miRN_2_MKRN240004582-1A_227Y7HLT4_L7_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/Sk28_miRN_2/Sk28_miRN_2_MKRN240004582-1A_227Y7HLT4_L7_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miRN_2/Sk28_miRN_2_Sk28_miRN_2_MKRN240004582-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miRN_2/Sk28_miRN_2_Sk28_miRN_2_MKRN240004582-1A_227Y7HLT4_L7_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miRN_2/Sk28_miRN_2_Sk28_miRN_2_MKRN240004582-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miRN_2/Sk28_miRN_2_Sk28_miRN_2_MKRN240004582-1A_227Y7HLT4_L7_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTA'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC'
+Using Long Clipping Sequence: 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 19869179 Both Surviving: 19502234 (98.15%) Forward Only Surviving: 316700 (1.59%) Reverse Only Surviving: 41516 (0.21%) Dropped: 8729 (0.04%)
+TrimmomaticPE: Completed successfully
+
+real	9m6.529s
+user	25m54.790s
+sys	0m22.135s
+
+2024-06-28 09:18:09 	 about to clean Sk28_miRN_3
+
+time java -jar /Users/adrian/software/Trimmomatic-0.39/trimmomatic-0.39.jar PE -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/Sk28_miRN_3/Sk28_miRN_3_MKRN240004583-1A_227Y7HLT4_L7_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/Sk28_miRN_3/Sk28_miRN_3_MKRN240004583-1A_227Y7HLT4_L7_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miRN_3/Sk28_miRN_3_Sk28_miRN_3_MKRN240004583-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miRN_3/Sk28_miRN_3_Sk28_miRN_3_MKRN240004583-1A_227Y7HLT4_L7_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miRN_3/Sk28_miRN_3_Sk28_miRN_3_MKRN240004583-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miRN_3/Sk28_miRN_3_Sk28_miRN_3_MKRN240004583-1A_227Y7HLT4_L7_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+
+TrimmomaticPE: Started with arguments:
+ -threads 4 -phred33 /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/Sk28_miRN_3/Sk28_miRN_3_MKRN240004583-1A_227Y7HLT4_L7_1.fq.gz /Users/adrian/research/keflavik/data/SETDB2_RNAseq_June2024/Sk28_miRN_3/Sk28_miRN_3_MKRN240004583-1A_227Y7HLT4_L7_2.fq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miRN_3/Sk28_miRN_3_Sk28_miRN_3_MKRN240004583-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miRN_3/Sk28_miRN_3_Sk28_miRN_3_MKRN240004583-1A_227Y7HLT4_L7_R1_garbage.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miRN_3/Sk28_miRN_3_Sk28_miRN_3_MKRN240004583-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/data/clean_fastq/Sk28_miRN_3/Sk28_miRN_3_Sk28_miRN_3_MKRN240004583-1A_227Y7HLT4_L7_R2_garbage.fastq.gz ILLUMINACLIP:/Users/adrian/software/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTA'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC'
+Using Long Clipping Sequence: 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 25473368 Both Surviving: 25055310 (98.36%) Forward Only Surviving: 357681 (1.40%) Reverse Only Surviving: 50183 (0.20%) Dropped: 10194 (0.04%)
+TrimmomaticPE: Completed successfully
+
+real	11m26.649s
+user	32m34.692s
+sys	0m28.501s
+
+(base) s8-mc07 2024-06-28 09:29:36 ~/hub/keflavik/001.clean_reads :

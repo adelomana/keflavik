@@ -72,4 +72,3 @@ print()
 #
 for label in unique_labels:
     trimmomatic_caller(label)
-    sys.exit()
