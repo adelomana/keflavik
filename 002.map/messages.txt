@@ -1,0 +1,635 @@
+Last login: Fri Jun 28 13:35:19 on ttys015
+(base) necio5 2024-06-28 18:06:10 ~/hub/keflavik/002.map : python kallisto_runner.py
+2024-06-28 18:06:13 	 recover labels...
+2024-06-28 18:06:13 	 ['M104_EV_1', 'M104_EV_2', 'M104_EV_3', 'M104_SET_1', 'M104_SET_2', 'M104_SET_3', 'M501_miR1_1', 'M501_miR1_2', 'M501_miR1_3', 'M501_miR2_1', 'M501_miR2_2', 'M501_miR2_3', 'M501_miRN_1', 'M501_miRN_2', 'M501_miRN_3', 'Sk28_miR1_1', 'Sk28_miR1_2', 'Sk28_miR1_3', 'Sk28_miR2_1', 'Sk28_miR2_2', 'Sk28_miR2_3', 'Sk28_miRN_1', 'Sk28_miRN_2', 'Sk28_miRN_3']
+2024-06-28 18:06:13 	 about to quantify M104_EV_1
+
+time kallisto quant -i /Users/adrian/software/kallisto/human_index_standard/index.idx -o /Users/adrian/research/keflavik/results/kallisto/kallisto.100/M104_EV_1 -t 8 -b 100  --verbose /Users/adrian/research/keflavik/results/clean_fastq/M104_EV_1/M104_EV_1_M104_EV_1_MKRN240004599-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/results/clean_fastq/M104_EV_1/M104_EV_1_M104_EV_1_MKRN240004599-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/results/clean_fastq/M104_EV_1/M104_EV_1_M104_EV_1_MKRN240004599-1A_22MFGHLT3_L3_R1_clean.fastq.gz /Users/adrian/research/keflavik/results/clean_fastq/M104_EV_1/M104_EV_1_M104_EV_1_MKRN240004599-1A_22MFGHLT3_L3_R2_clean.fastq.gz
+
+[quant] fragment length distribution will be estimated from the data
+[index] k-mer length: 31
+[index] number of targets: 227,665
+[index] number of k-mers: 139,900,295
+[index] number of D-list k-mers: 5,477,475
+[quant] running in paired-end mode
+[quant] will process pair 1: /Users/adrian/research/keflavik/results/clean_fastq/M104_EV_1/M104_EV_1_M104_EV_1_MKRN240004599-1A_227Y7HLT4_L7_R1_clean.fastq.gz
+                             /Users/adrian/research/keflavik/results/clean_fastq/M104_EV_1/M104_EV_1_M104_EV_1_MKRN240004599-1A_227Y7HLT4_L7_R2_clean.fastq.gz
+[quant] will process pair 2: /Users/adrian/research/keflavik/results/clean_fastq/M104_EV_1/M104_EV_1_M104_EV_1_MKRN240004599-1A_22MFGHLT3_L3_R1_clean.fastq.gz
+                             /Users/adrian/research/keflavik/results/clean_fastq/M104_EV_1/M104_EV_1_M104_EV_1_MKRN240004599-1A_22MFGHLT3_L3_R2_clean.fastq.gz
+[quant] finding pseudoalignments for the reads ...
+[progress] 21M reads processed (83.2% mapped)
+[quant] done
+[quant] processed 21,814,441 reads, 18,143,542 reads pseudoaligned
+[quant] estimated average fragment length: 300.3
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,199 rounds
+[bstrp] number of EM bootstraps complete: 100
+
+
+real	15m32.565s
+user	104m43.881s
+sys	0m23.162s
+
+2024-06-28 18:21:46 	 about to quantify M104_EV_2
+
+time kallisto quant -i /Users/adrian/software/kallisto/human_index_standard/index.idx -o /Users/adrian/research/keflavik/results/kallisto/kallisto.100/M104_EV_2 -t 8 -b 100  --verbose /Users/adrian/research/keflavik/results/clean_fastq/M104_EV_2/M104_EV_2_M104_EV_2_MKRN240004600-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/results/clean_fastq/M104_EV_2/M104_EV_2_M104_EV_2_MKRN240004600-1A_227Y7HLT4_L7_R2_clean.fastq.gz
+
+[quant] fragment length distribution will be estimated from the data
+[index] k-mer length: 31
+[index] number of targets: 227,665
+[index] number of k-mers: 139,900,295
+[index] number of D-list k-mers: 5,477,475
+[quant] running in paired-end mode
+[quant] will process pair 1: /Users/adrian/research/keflavik/results/clean_fastq/M104_EV_2/M104_EV_2_M104_EV_2_MKRN240004600-1A_227Y7HLT4_L7_R1_clean.fastq.gz
+                             /Users/adrian/research/keflavik/results/clean_fastq/M104_EV_2/M104_EV_2_M104_EV_2_MKRN240004600-1A_227Y7HLT4_L7_R2_clean.fastq.gz
+[quant] finding pseudoalignments for the reads ...
+[progress] 20M reads processed (83.3% mapped)
+[quant] done
+[quant] processed 20,504,285 reads, 17,071,227 reads pseudoaligned
+[quant] estimated average fragment length: 316.9
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,183 rounds
+[bstrp] number of EM bootstraps complete: 100
+
+
+real	16m29.313s
+user	108m14.850s
+sys	0m25.433s
+
+2024-06-28 18:38:15 	 about to quantify M104_EV_3
+
+time kallisto quant -i /Users/adrian/software/kallisto/human_index_standard/index.idx -o /Users/adrian/research/keflavik/results/kallisto/kallisto.100/M104_EV_3 -t 8 -b 100  --verbose /Users/adrian/research/keflavik/results/clean_fastq/M104_EV_3/M104_EV_3_M104_EV_3_MKRN240004601-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/results/clean_fastq/M104_EV_3/M104_EV_3_M104_EV_3_MKRN240004601-1A_227Y7HLT4_L7_R2_clean.fastq.gz
+
+[quant] fragment length distribution will be estimated from the data
+[index] k-mer length: 31
+[index] number of targets: 227,665
+[index] number of k-mers: 139,900,295
+[index] number of D-list k-mers: 5,477,475
+[quant] running in paired-end mode
+[quant] will process pair 1: /Users/adrian/research/keflavik/results/clean_fastq/M104_EV_3/M104_EV_3_M104_EV_3_MKRN240004601-1A_227Y7HLT4_L7_R1_clean.fastq.gz
+                             /Users/adrian/research/keflavik/results/clean_fastq/M104_EV_3/M104_EV_3_M104_EV_3_MKRN240004601-1A_227Y7HLT4_L7_R2_clean.fastq.gz
+[quant] finding pseudoalignments for the reads ...
+[progress] 22M reads processed (84.0% mapped)
+[quant] done
+[quant] processed 22,805,062 reads, 19,145,493 reads pseudoaligned
+[quant] estimated average fragment length: 309.3
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,239 rounds
+[bstrp] number of EM bootstraps complete: 100
+
+
+real	17m33.363s
+user	118m9.559s
+sys	0m24.881s
+
+2024-06-28 18:55:48 	 about to quantify M104_SET_1
+
+time kallisto quant -i /Users/adrian/software/kallisto/human_index_standard/index.idx -o /Users/adrian/research/keflavik/results/kallisto/kallisto.100/M104_SET_1 -t 8 -b 100  --verbose /Users/adrian/research/keflavik/results/clean_fastq/M104_SET_1/M104_SET_1_M104_SET_1_MKRN240004602-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/results/clean_fastq/M104_SET_1/M104_SET_1_M104_SET_1_MKRN240004602-1A_227Y7HLT4_L7_R2_clean.fastq.gz
+
+[quant] fragment length distribution will be estimated from the data
+[index] k-mer length: 31
+[index] number of targets: 227,665
+[index] number of k-mers: 139,900,295
+[index] number of D-list k-mers: 5,477,475
+[quant] running in paired-end mode
+[quant] will process pair 1: /Users/adrian/research/keflavik/results/clean_fastq/M104_SET_1/M104_SET_1_M104_SET_1_MKRN240004602-1A_227Y7HLT4_L7_R1_clean.fastq.gz
+                             /Users/adrian/research/keflavik/results/clean_fastq/M104_SET_1/M104_SET_1_M104_SET_1_MKRN240004602-1A_227Y7HLT4_L7_R2_clean.fastq.gz
+[quant] finding pseudoalignments for the reads ...
+[progress] 22M reads processed (83.1% mapped)
+[quant] done
+[quant] processed 22,801,711 reads, 18,958,210 reads pseudoaligned
+[quant] estimated average fragment length: 280.1
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,254 rounds
+[bstrp] number of EM bootstraps complete: 100
+
+
+real	17m10.272s
+user	112m42.166s
+sys	0m29.564s
+
+2024-06-28 19:12:59 	 about to quantify M104_SET_2
+
+time kallisto quant -i /Users/adrian/software/kallisto/human_index_standard/index.idx -o /Users/adrian/research/keflavik/results/kallisto/kallisto.100/M104_SET_2 -t 8 -b 100  --verbose /Users/adrian/research/keflavik/results/clean_fastq/M104_SET_2/M104_SET_2_M104_SET_2_MKRN240004603-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/results/clean_fastq/M104_SET_2/M104_SET_2_M104_SET_2_MKRN240004603-1A_227Y7HLT4_L7_R2_clean.fastq.gz
+
+[quant] fragment length distribution will be estimated from the data
+[index] k-mer length: 31
+[index] number of targets: 227,665
+[index] number of k-mers: 139,900,295
+[index] number of D-list k-mers: 5,477,475
+[quant] running in paired-end mode
+[quant] will process pair 1: /Users/adrian/research/keflavik/results/clean_fastq/M104_SET_2/M104_SET_2_M104_SET_2_MKRN240004603-1A_227Y7HLT4_L7_R1_clean.fastq.gz
+                             /Users/adrian/research/keflavik/results/clean_fastq/M104_SET_2/M104_SET_2_M104_SET_2_MKRN240004603-1A_227Y7HLT4_L7_R2_clean.fastq.gz
+[quant] finding pseudoalignments for the reads ...
+[progress] 33M reads processed (82.9% mapped)
+[quant] done
+[quant] processed 33,968,864 reads, 28,173,476 reads pseudoaligned
+[quant] estimated average fragment length: 311.6
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,544 rounds
+[bstrp] number of EM bootstraps complete: 100
+
+
+real	20m4.902s
+user	132m19.581s
+sys	0m30.807s
+
+2024-06-28 19:33:04 	 about to quantify M104_SET_3
+
+time kallisto quant -i /Users/adrian/software/kallisto/human_index_standard/index.idx -o /Users/adrian/research/keflavik/results/kallisto/kallisto.100/M104_SET_3 -t 8 -b 100  --verbose /Users/adrian/research/keflavik/results/clean_fastq/M104_SET_3/M104_SET_3_M104_SET_3_MKRN240004604-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/results/clean_fastq/M104_SET_3/M104_SET_3_M104_SET_3_MKRN240004604-1A_227Y7HLT4_L7_R2_clean.fastq.gz
+
+[quant] fragment length distribution will be estimated from the data
+[index] k-mer length: 31
+[index] number of targets: 227,665
+[index] number of k-mers: 139,900,295
+[index] number of D-list k-mers: 5,477,475
+[quant] running in paired-end mode
+[quant] will process pair 1: /Users/adrian/research/keflavik/results/clean_fastq/M104_SET_3/M104_SET_3_M104_SET_3_MKRN240004604-1A_227Y7HLT4_L7_R1_clean.fastq.gz
+                             /Users/adrian/research/keflavik/results/clean_fastq/M104_SET_3/M104_SET_3_M104_SET_3_MKRN240004604-1A_227Y7HLT4_L7_R2_clean.fastq.gz
+[quant] finding pseudoalignments for the reads ...
+[progress] 21M reads processed (84.7% mapped)
+[quant] done
+[quant] processed 21,909,280 reads, 18,557,143 reads pseudoaligned
+[quant] estimated average fragment length: 295.1
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,431 rounds
+[bstrp] number of EM bootstraps complete: 100
+
+
+real	38m1.408s
+user	106m29.874s
+sys	0m19.076s
+
+2024-06-28 20:11:05 	 about to quantify M501_miR1_1
+
+time kallisto quant -i /Users/adrian/software/kallisto/human_index_standard/index.idx -o /Users/adrian/research/keflavik/results/kallisto/kallisto.100/M501_miR1_1 -t 8 -b 100  --verbose /Users/adrian/research/keflavik/results/clean_fastq/M501_miR1_1/M501_miR1_1_M501_miR1_1_MKRN240004593-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/results/clean_fastq/M501_miR1_1/M501_miR1_1_M501_miR1_1_MKRN240004593-1A_227Y7HLT4_L7_R2_clean.fastq.gz
+
+[quant] fragment length distribution will be estimated from the data
+[index] k-mer length: 31
+[index] number of targets: 227,665
+[index] number of k-mers: 139,900,295
+[index] number of D-list k-mers: 5,477,475
+[quant] running in paired-end mode
+[quant] will process pair 1: /Users/adrian/research/keflavik/results/clean_fastq/M501_miR1_1/M501_miR1_1_M501_miR1_1_MKRN240004593-1A_227Y7HLT4_L7_R1_clean.fastq.gz
+                             /Users/adrian/research/keflavik/results/clean_fastq/M501_miR1_1/M501_miR1_1_M501_miR1_1_MKRN240004593-1A_227Y7HLT4_L7_R2_clean.fastq.gz
+[quant] finding pseudoalignments for the reads ...
+[progress] 22M reads processed (84.1% mapped)
+[quant] done
+[quant] processed 22,292,571 reads, 18,753,504 reads pseudoaligned
+[quant] estimated average fragment length: 283.2
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,266 rounds
+[bstrp] number of EM bootstraps complete: 100
+
+
+real	53m34.170s
+user	105m14.278s
+sys	0m11.681s
+
+2024-06-28 21:04:39 	 about to quantify M501_miR1_2
+
+time kallisto quant -i /Users/adrian/software/kallisto/human_index_standard/index.idx -o /Users/adrian/research/keflavik/results/kallisto/kallisto.100/M501_miR1_2 -t 8 -b 100  --verbose /Users/adrian/research/keflavik/results/clean_fastq/M501_miR1_2/M501_miR1_2_M501_miR1_2_MKRN240004594-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/results/clean_fastq/M501_miR1_2/M501_miR1_2_M501_miR1_2_MKRN240004594-1A_227Y7HLT4_L7_R2_clean.fastq.gz
+
+[quant] fragment length distribution will be estimated from the data
+[index] k-mer length: 31
+[index] number of targets: 227,665
+[index] number of k-mers: 139,900,295
+[index] number of D-list k-mers: 5,477,475
+[quant] running in paired-end mode
+[quant] will process pair 1: /Users/adrian/research/keflavik/results/clean_fastq/M501_miR1_2/M501_miR1_2_M501_miR1_2_MKRN240004594-1A_227Y7HLT4_L7_R1_clean.fastq.gz
+                             /Users/adrian/research/keflavik/results/clean_fastq/M501_miR1_2/M501_miR1_2_M501_miR1_2_MKRN240004594-1A_227Y7HLT4_L7_R2_clean.fastq.gz
+[quant] finding pseudoalignments for the reads ...
+[progress] 24M reads processed (85.2% mapped)
+[quant] done
+[quant] processed 24,739,172 reads, 21,079,232 reads pseudoaligned
+[quant] estimated average fragment length: 280.7
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,547 rounds
+[bstrp] number of EM bootstraps complete: 100
+
+
+real	16m1.859s
+user	117m31.069s
+sys	0m12.848s
+
+2024-06-28 21:20:41 	 about to quantify M501_miR1_3
+
+time kallisto quant -i /Users/adrian/software/kallisto/human_index_standard/index.idx -o /Users/adrian/research/keflavik/results/kallisto/kallisto.100/M501_miR1_3 -t 8 -b 100  --verbose /Users/adrian/research/keflavik/results/clean_fastq/M501_miR1_3/M501_miR1_3_M501_miR1_3_MKRN240004595-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/results/clean_fastq/M501_miR1_3/M501_miR1_3_M501_miR1_3_MKRN240004595-1A_227Y7HLT4_L7_R2_clean.fastq.gz
+
+[quant] fragment length distribution will be estimated from the data
+[index] k-mer length: 31
+[index] number of targets: 227,665
+[index] number of k-mers: 139,900,295
+[index] number of D-list k-mers: 5,477,475
+[quant] running in paired-end mode
+[quant] will process pair 1: /Users/adrian/research/keflavik/results/clean_fastq/M501_miR1_3/M501_miR1_3_M501_miR1_3_MKRN240004595-1A_227Y7HLT4_L7_R1_clean.fastq.gz
+                             /Users/adrian/research/keflavik/results/clean_fastq/M501_miR1_3/M501_miR1_3_M501_miR1_3_MKRN240004595-1A_227Y7HLT4_L7_R2_clean.fastq.gz
+[quant] finding pseudoalignments for the reads ...
+[progress] 21M reads processed (82.3% mapped)
+[quant] done
+[quant] processed 21,887,546 reads, 18,016,190 reads pseudoaligned
+[quant] estimated average fragment length: 313.7
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,425 rounds
+[bstrp] number of EM bootstraps complete: 100
+
+
+real	140m42.777s
+user	110m21.736s
+sys	0m12.124s
+
+2024-06-28 23:41:24 	 about to quantify M501_miR2_1
+
+time kallisto quant -i /Users/adrian/software/kallisto/human_index_standard/index.idx -o /Users/adrian/research/keflavik/results/kallisto/kallisto.100/M501_miR2_1 -t 8 -b 100  --verbose /Users/adrian/research/keflavik/results/clean_fastq/M501_miR2_1/M501_miR2_1_M501_miR2_1_MKRN240004596-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/results/clean_fastq/M501_miR2_1/M501_miR2_1_M501_miR2_1_MKRN240004596-1A_227Y7HLT4_L7_R2_clean.fastq.gz
+
+[quant] fragment length distribution will be estimated from the data
+[index] k-mer length: 31
+[index] number of targets: 227,665
+[index] number of k-mers: 139,900,295
+[index] number of D-list k-mers: 5,477,475
+[quant] running in paired-end mode
+[quant] will process pair 1: /Users/adrian/research/keflavik/results/clean_fastq/M501_miR2_1/M501_miR2_1_M501_miR2_1_MKRN240004596-1A_227Y7HLT4_L7_R1_clean.fastq.gz
+                             /Users/adrian/research/keflavik/results/clean_fastq/M501_miR2_1/M501_miR2_1_M501_miR2_1_MKRN240004596-1A_227Y7HLT4_L7_R2_clean.fastq.gz
+[quant] finding pseudoalignments for the reads ...
+[progress] 22M reads processed (83.9% mapped)
+[quant] done
+[quant] processed 23,133,659 reads, 19,413,826 reads pseudoaligned
+[quant] estimated average fragment length: 292.1
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,173 rounds
+[bstrp] number of EM bootstraps complete: 100
+
+
+real	90m24.919s
+user	110m29.940s
+sys	0m11.844s
+
+2024-06-29 01:11:49 	 about to quantify M501_miR2_2
+
+time kallisto quant -i /Users/adrian/software/kallisto/human_index_standard/index.idx -o /Users/adrian/research/keflavik/results/kallisto/kallisto.100/M501_miR2_2 -t 8 -b 100  --verbose /Users/adrian/research/keflavik/results/clean_fastq/M501_miR2_2/M501_miR2_2_M501_miR2_2_MKRN240004597-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/results/clean_fastq/M501_miR2_2/M501_miR2_2_M501_miR2_2_MKRN240004597-1A_227Y7HLT4_L7_R2_clean.fastq.gz
+
+[quant] fragment length distribution will be estimated from the data
+[index] k-mer length: 31
+[index] number of targets: 227,665
+[index] number of k-mers: 139,900,295
+[index] number of D-list k-mers: 5,477,475
+[quant] running in paired-end mode
+[quant] will process pair 1: /Users/adrian/research/keflavik/results/clean_fastq/M501_miR2_2/M501_miR2_2_M501_miR2_2_MKRN240004597-1A_227Y7HLT4_L7_R1_clean.fastq.gz
+                             /Users/adrian/research/keflavik/results/clean_fastq/M501_miR2_2/M501_miR2_2_M501_miR2_2_MKRN240004597-1A_227Y7HLT4_L7_R2_clean.fastq.gz
+[quant] finding pseudoalignments for the reads ...
+[progress] 22M reads processed (83.8% mapped)
+[quant] done
+[quant] processed 23,158,223 reads, 19,408,693 reads pseudoaligned
+[quant] estimated average fragment length: 276.7
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,700 rounds
+[bstrp] number of EM bootstraps complete: 100
+
+
+real	101m41.764s
+user	112m15.336s
+sys	0m11.226s
+
+2024-06-29 02:53:31 	 about to quantify M501_miR2_3
+
+time kallisto quant -i /Users/adrian/software/kallisto/human_index_standard/index.idx -o /Users/adrian/research/keflavik/results/kallisto/kallisto.100/M501_miR2_3 -t 8 -b 100  --verbose /Users/adrian/research/keflavik/results/clean_fastq/M501_miR2_3/M501_miR2_3_M501_miR2_3_MKRN240004598-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/results/clean_fastq/M501_miR2_3/M501_miR2_3_M501_miR2_3_MKRN240004598-1A_227Y7HLT4_L7_R2_clean.fastq.gz
+
+[quant] fragment length distribution will be estimated from the data
+[index] k-mer length: 31
+[index] number of targets: 227,665
+[index] number of k-mers: 139,900,295
+[index] number of D-list k-mers: 5,477,475
+[quant] running in paired-end mode
+[quant] will process pair 1: /Users/adrian/research/keflavik/results/clean_fastq/M501_miR2_3/M501_miR2_3_M501_miR2_3_MKRN240004598-1A_227Y7HLT4_L7_R1_clean.fastq.gz
+                             /Users/adrian/research/keflavik/results/clean_fastq/M501_miR2_3/M501_miR2_3_M501_miR2_3_MKRN240004598-1A_227Y7HLT4_L7_R2_clean.fastq.gz
+[quant] finding pseudoalignments for the reads ...
+[progress] 21M reads processed (84.4% mapped)
+[quant] done
+[quant] processed 21,801,388 reads, 18,390,768 reads pseudoaligned
+[quant] estimated average fragment length: 315.3
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,521 rounds
+[bstrp] number of EM bootstraps complete: 100
+
+
+real	80m16.295s
+user	110m12.775s
+sys	0m11.309s
+
+2024-06-29 04:13:47 	 about to quantify M501_miRN_1
+
+time kallisto quant -i /Users/adrian/software/kallisto/human_index_standard/index.idx -o /Users/adrian/research/keflavik/results/kallisto/kallisto.100/M501_miRN_1 -t 8 -b 100  --verbose /Users/adrian/research/keflavik/results/clean_fastq/M501_miRN_1/M501_miRN_1_M501_miRN_1_MKRN240004590-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/results/clean_fastq/M501_miRN_1/M501_miRN_1_M501_miRN_1_MKRN240004590-1A_227Y7HLT4_L7_R2_clean.fastq.gz
+
+[quant] fragment length distribution will be estimated from the data
+[index] k-mer length: 31
+[index] number of targets: 227,665
+[index] number of k-mers: 139,900,295
+[index] number of D-list k-mers: 5,477,475
+[quant] running in paired-end mode
+[quant] will process pair 1: /Users/adrian/research/keflavik/results/clean_fastq/M501_miRN_1/M501_miRN_1_M501_miRN_1_MKRN240004590-1A_227Y7HLT4_L7_R1_clean.fastq.gz
+                             /Users/adrian/research/keflavik/results/clean_fastq/M501_miRN_1/M501_miRN_1_M501_miRN_1_MKRN240004590-1A_227Y7HLT4_L7_R2_clean.fastq.gz
+[quant] finding pseudoalignments for the reads ...
+[progress] 21M reads processed (85.1% mapped)
+[quant] done
+[quant] processed 21,237,203 reads, 18,072,715 reads pseudoaligned
+[quant] estimated average fragment length: 290.3
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,520 rounds
+[bstrp] number of EM bootstraps complete: 100
+
+
+real	100m0.575s
+user	102m35.520s
+sys	0m10.119s
+
+2024-06-29 05:53:47 	 about to quantify M501_miRN_2
+
+time kallisto quant -i /Users/adrian/software/kallisto/human_index_standard/index.idx -o /Users/adrian/research/keflavik/results/kallisto/kallisto.100/M501_miRN_2 -t 8 -b 100  --verbose /Users/adrian/research/keflavik/results/clean_fastq/M501_miRN_2/M501_miRN_2_M501_miRN_2_MKRN240004591-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/results/clean_fastq/M501_miRN_2/M501_miRN_2_M501_miRN_2_MKRN240004591-1A_227Y7HLT4_L7_R2_clean.fastq.gz
+
+[quant] fragment length distribution will be estimated from the data
+[index] k-mer length: 31
+[index] number of targets: 227,665
+[index] number of k-mers: 139,900,295
+[index] number of D-list k-mers: 5,477,475
+[quant] running in paired-end mode
+[quant] will process pair 1: /Users/adrian/research/keflavik/results/clean_fastq/M501_miRN_2/M501_miRN_2_M501_miRN_2_MKRN240004591-1A_227Y7HLT4_L7_R1_clean.fastq.gz
+                             /Users/adrian/research/keflavik/results/clean_fastq/M501_miRN_2/M501_miRN_2_M501_miRN_2_MKRN240004591-1A_227Y7HLT4_L7_R2_clean.fastq.gz
+[quant] finding pseudoalignments for the reads ...
+[progress] 19M reads processed (83.1% mapped)
+[quant] done
+[quant] processed 19,995,008 reads, 16,611,252 reads pseudoaligned
+[quant] estimated average fragment length: 319.8
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,212 rounds
+[bstrp] number of EM bootstraps complete: 100
+
+
+real	55m29.710s
+user	110m13.191s
+sys	0m11.307s
+
+2024-06-29 06:49:17 	 about to quantify M501_miRN_3
+
+time kallisto quant -i /Users/adrian/software/kallisto/human_index_standard/index.idx -o /Users/adrian/research/keflavik/results/kallisto/kallisto.100/M501_miRN_3 -t 8 -b 100  --verbose /Users/adrian/research/keflavik/results/clean_fastq/M501_miRN_3/M501_miRN_3_M501_miRN_3_MKRN240004592-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/results/clean_fastq/M501_miRN_3/M501_miRN_3_M501_miRN_3_MKRN240004592-1A_227Y7HLT4_L7_R2_clean.fastq.gz
+
+[quant] fragment length distribution will be estimated from the data
+[index] k-mer length: 31
+[index] number of targets: 227,665
+[index] number of k-mers: 139,900,295
+[index] number of D-list k-mers: 5,477,475
+[quant] running in paired-end mode
+[quant] will process pair 1: /Users/adrian/research/keflavik/results/clean_fastq/M501_miRN_3/M501_miRN_3_M501_miRN_3_MKRN240004592-1A_227Y7HLT4_L7_R1_clean.fastq.gz
+                             /Users/adrian/research/keflavik/results/clean_fastq/M501_miRN_3/M501_miRN_3_M501_miRN_3_MKRN240004592-1A_227Y7HLT4_L7_R2_clean.fastq.gz
+[quant] finding pseudoalignments for the reads ...
+[progress] 21M reads processed (83.9% mapped)
+[quant] done
+[quant] processed 21,588,081 reads, 18,110,688 reads pseudoaligned
+[quant] estimated average fragment length: 274.3
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,268 rounds
+[bstrp] number of EM bootstraps complete: 100
+
+
+real	15m2.629s
+user	109m20.423s
+sys	0m10.516s
+
+2024-06-29 07:04:20 	 about to quantify Sk28_miR1_1
+
+time kallisto quant -i /Users/adrian/software/kallisto/human_index_standard/index.idx -o /Users/adrian/research/keflavik/results/kallisto/kallisto.100/Sk28_miR1_1 -t 8 -b 100  --verbose /Users/adrian/research/keflavik/results/clean_fastq/Sk28_miR1_1/Sk28_miR1_1_Sk28_miR1_1_MKRN240004584-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/results/clean_fastq/Sk28_miR1_1/Sk28_miR1_1_Sk28_miR1_1_MKRN240004584-1A_227Y7HLT4_L7_R2_clean.fastq.gz
+
+[quant] fragment length distribution will be estimated from the data
+[index] k-mer length: 31
+[index] number of targets: 227,665
+[index] number of k-mers: 139,900,295
+[index] number of D-list k-mers: 5,477,475
+[quant] running in paired-end mode
+[quant] will process pair 1: /Users/adrian/research/keflavik/results/clean_fastq/Sk28_miR1_1/Sk28_miR1_1_Sk28_miR1_1_MKRN240004584-1A_227Y7HLT4_L7_R1_clean.fastq.gz
+                             /Users/adrian/research/keflavik/results/clean_fastq/Sk28_miR1_1/Sk28_miR1_1_Sk28_miR1_1_MKRN240004584-1A_227Y7HLT4_L7_R2_clean.fastq.gz
+[quant] finding pseudoalignments for the reads ...
+[progress] 20M reads processed (80.9% mapped)
+[quant] done
+[quant] processed 20,871,387 reads, 16,882,098 reads pseudoaligned
+[quant] estimated average fragment length: 321.6
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,291 rounds
+[bstrp] number of EM bootstraps complete: 100
+
+
+real	16m33.030s
+user	120m31.791s
+sys	0m11.757s
+
+2024-06-29 07:20:53 	 about to quantify Sk28_miR1_2
+
+time kallisto quant -i /Users/adrian/software/kallisto/human_index_standard/index.idx -o /Users/adrian/research/keflavik/results/kallisto/kallisto.100/Sk28_miR1_2 -t 8 -b 100  --verbose /Users/adrian/research/keflavik/results/clean_fastq/Sk28_miR1_2/Sk28_miR1_2_Sk28_miR1_2_MKRN240004585-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/results/clean_fastq/Sk28_miR1_2/Sk28_miR1_2_Sk28_miR1_2_MKRN240004585-1A_227Y7HLT4_L7_R2_clean.fastq.gz
+
+[quant] fragment length distribution will be estimated from the data
+[index] k-mer length: 31
+[index] number of targets: 227,665
+[index] number of k-mers: 139,900,295
+[index] number of D-list k-mers: 5,477,475
+[quant] running in paired-end mode
+[quant] will process pair 1: /Users/adrian/research/keflavik/results/clean_fastq/Sk28_miR1_2/Sk28_miR1_2_Sk28_miR1_2_MKRN240004585-1A_227Y7HLT4_L7_R1_clean.fastq.gz
+                             /Users/adrian/research/keflavik/results/clean_fastq/Sk28_miR1_2/Sk28_miR1_2_Sk28_miR1_2_MKRN240004585-1A_227Y7HLT4_L7_R2_clean.fastq.gz
+[quant] finding pseudoalignments for the reads ...
+[progress] 20M reads processed (82.9% mapped)
+[quant] done
+[quant] processed 21,057,977 reads, 17,453,035 reads pseudoaligned
+[quant] estimated average fragment length: 318.4
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,351 rounds
+[bstrp] number of EM bootstraps complete: 100
+
+
+real	17m38.564s
+user	128m21.415s
+sys	0m12.748s
+
+2024-06-29 07:38:31 	 about to quantify Sk28_miR1_3
+
+time kallisto quant -i /Users/adrian/software/kallisto/human_index_standard/index.idx -o /Users/adrian/research/keflavik/results/kallisto/kallisto.100/Sk28_miR1_3 -t 8 -b 100  --verbose /Users/adrian/research/keflavik/results/clean_fastq/Sk28_miR1_3/Sk28_miR1_3_Sk28_miR1_3_MKRN240004586-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/results/clean_fastq/Sk28_miR1_3/Sk28_miR1_3_Sk28_miR1_3_MKRN240004586-1A_227Y7HLT4_L7_R2_clean.fastq.gz
+
+[quant] fragment length distribution will be estimated from the data
+[index] k-mer length: 31
+[index] number of targets: 227,665
+[index] number of k-mers: 139,900,295
+[index] number of D-list k-mers: 5,477,475
+[quant] running in paired-end mode
+[quant] will process pair 1: /Users/adrian/research/keflavik/results/clean_fastq/Sk28_miR1_3/Sk28_miR1_3_Sk28_miR1_3_MKRN240004586-1A_227Y7HLT4_L7_R1_clean.fastq.gz
+                             /Users/adrian/research/keflavik/results/clean_fastq/Sk28_miR1_3/Sk28_miR1_3_Sk28_miR1_3_MKRN240004586-1A_227Y7HLT4_L7_R2_clean.fastq.gz
+[quant] finding pseudoalignments for the reads ...
+[progress] 19M reads processed (83.1% mapped)
+[quant] done
+[quant] processed 20,065,929 reads, 16,680,366 reads pseudoaligned
+[quant] estimated average fragment length: 321.7
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,247 rounds
+[bstrp] number of EM bootstraps complete: 100
+
+
+real	48m40.079s
+user	121m39.034s
+sys	0m11.625s
+
+2024-06-29 08:27:11 	 about to quantify Sk28_miR2_1
+
+time kallisto quant -i /Users/adrian/software/kallisto/human_index_standard/index.idx -o /Users/adrian/research/keflavik/results/kallisto/kallisto.100/Sk28_miR2_1 -t 8 -b 100  --verbose /Users/adrian/research/keflavik/results/clean_fastq/Sk28_miR2_1/Sk28_miR2_1_Sk28_miR2_1_MKRN240004587-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/results/clean_fastq/Sk28_miR2_1/Sk28_miR2_1_Sk28_miR2_1_MKRN240004587-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/results/clean_fastq/Sk28_miR2_1/Sk28_miR2_1_Sk28_miR2_1_MKRN240004587-1A_22MFGHLT3_L3_R1_clean.fastq.gz /Users/adrian/research/keflavik/results/clean_fastq/Sk28_miR2_1/Sk28_miR2_1_Sk28_miR2_1_MKRN240004587-1A_22MFGHLT3_L3_R2_clean.fastq.gz
+
+[quant] fragment length distribution will be estimated from the data
+[index] k-mer length: 31
+[index] number of targets: 227,665
+[index] number of k-mers: 139,900,295
+[index] number of D-list k-mers: 5,477,475
+[quant] running in paired-end mode
+[quant] will process pair 1: /Users/adrian/research/keflavik/results/clean_fastq/Sk28_miR2_1/Sk28_miR2_1_Sk28_miR2_1_MKRN240004587-1A_227Y7HLT4_L7_R1_clean.fastq.gz
+                             /Users/adrian/research/keflavik/results/clean_fastq/Sk28_miR2_1/Sk28_miR2_1_Sk28_miR2_1_MKRN240004587-1A_227Y7HLT4_L7_R2_clean.fastq.gz
+[quant] will process pair 2: /Users/adrian/research/keflavik/results/clean_fastq/Sk28_miR2_1/Sk28_miR2_1_Sk28_miR2_1_MKRN240004587-1A_22MFGHLT3_L3_R1_clean.fastq.gz
+                             /Users/adrian/research/keflavik/results/clean_fastq/Sk28_miR2_1/Sk28_miR2_1_Sk28_miR2_1_MKRN240004587-1A_22MFGHLT3_L3_R2_clean.fastq.gz
+[quant] finding pseudoalignments for the reads ...
+[progress] 21M reads processed (85.1% mapped)
+[quant] done
+[quant] processed 21,186,275 reads, 18,026,257 reads pseudoaligned
+[quant] estimated average fragment length: 314.4
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,274 rounds
+[bstrp] number of EM bootstraps complete: 100
+
+
+real	65m32.394s
+user	110m49.577s
+sys	0m10.564s
+
+2024-06-29 09:32:44 	 about to quantify Sk28_miR2_2
+
+time kallisto quant -i /Users/adrian/software/kallisto/human_index_standard/index.idx -o /Users/adrian/research/keflavik/results/kallisto/kallisto.100/Sk28_miR2_2 -t 8 -b 100  --verbose /Users/adrian/research/keflavik/results/clean_fastq/Sk28_miR2_2/Sk28_miR2_2_Sk28_miR2_2_MKRN240004588-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/results/clean_fastq/Sk28_miR2_2/Sk28_miR2_2_Sk28_miR2_2_MKRN240004588-1A_227Y7HLT4_L7_R2_clean.fastq.gz /Users/adrian/research/keflavik/results/clean_fastq/Sk28_miR2_2/Sk28_miR2_2_Sk28_miR2_2_MKRN240004588-1A_22MFGHLT3_L3_R1_clean.fastq.gz /Users/adrian/research/keflavik/results/clean_fastq/Sk28_miR2_2/Sk28_miR2_2_Sk28_miR2_2_MKRN240004588-1A_22MFGHLT3_L3_R2_clean.fastq.gz
+
+[quant] fragment length distribution will be estimated from the data
+[index] k-mer length: 31
+[index] number of targets: 227,665
+[index] number of k-mers: 139,900,295
+[index] number of D-list k-mers: 5,477,475
+[quant] running in paired-end mode
+[quant] will process pair 1: /Users/adrian/research/keflavik/results/clean_fastq/Sk28_miR2_2/Sk28_miR2_2_Sk28_miR2_2_MKRN240004588-1A_227Y7HLT4_L7_R1_clean.fastq.gz
+                             /Users/adrian/research/keflavik/results/clean_fastq/Sk28_miR2_2/Sk28_miR2_2_Sk28_miR2_2_MKRN240004588-1A_227Y7HLT4_L7_R2_clean.fastq.gz
+[quant] will process pair 2: /Users/adrian/research/keflavik/results/clean_fastq/Sk28_miR2_2/Sk28_miR2_2_Sk28_miR2_2_MKRN240004588-1A_22MFGHLT3_L3_R1_clean.fastq.gz
+                             /Users/adrian/research/keflavik/results/clean_fastq/Sk28_miR2_2/Sk28_miR2_2_Sk28_miR2_2_MKRN240004588-1A_22MFGHLT3_L3_R2_clean.fastq.gz
+[quant] finding pseudoalignments for the reads ...
+[progress] 22M reads processed (84.0% mapped)
+[quant] done
+[quant] processed 22,908,212 reads, 19,249,214 reads pseudoaligned
+[quant] estimated average fragment length: 309.7
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,260 rounds
+[bstrp] number of EM bootstraps complete: 100
+
+
+real	38m22.089s
+user	115m10.491s
+sys	0m15.828s
+
+2024-06-29 10:11:06 	 about to quantify Sk28_miR2_3
+
+time kallisto quant -i /Users/adrian/software/kallisto/human_index_standard/index.idx -o /Users/adrian/research/keflavik/results/kallisto/kallisto.100/Sk28_miR2_3 -t 8 -b 100  --verbose /Users/adrian/research/keflavik/results/clean_fastq/Sk28_miR2_3/Sk28_miR2_3_Sk28_miR2_3_MKRN240004589-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/results/clean_fastq/Sk28_miR2_3/Sk28_miR2_3_Sk28_miR2_3_MKRN240004589-1A_227Y7HLT4_L7_R2_clean.fastq.gz
+
+[quant] fragment length distribution will be estimated from the data
+[index] k-mer length: 31
+[index] number of targets: 227,665
+[index] number of k-mers: 139,900,295
+[index] number of D-list k-mers: 5,477,475
+[quant] running in paired-end mode
+[quant] will process pair 1: /Users/adrian/research/keflavik/results/clean_fastq/Sk28_miR2_3/Sk28_miR2_3_Sk28_miR2_3_MKRN240004589-1A_227Y7HLT4_L7_R1_clean.fastq.gz
+                             /Users/adrian/research/keflavik/results/clean_fastq/Sk28_miR2_3/Sk28_miR2_3_Sk28_miR2_3_MKRN240004589-1A_227Y7HLT4_L7_R2_clean.fastq.gz
+[quant] finding pseudoalignments for the reads ...
+[progress] 20M reads processed (83.9% mapped)
+[quant] done
+[quant] processed 20,640,748 reads, 17,310,811 reads pseudoaligned
+[quant] estimated average fragment length: 321.4
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,352 rounds
+[bstrp] number of EM bootstraps complete: 100
+
+
+real	16m20.634s
+user	114m17.199s
+sys	0m18.602s
+
+2024-06-29 10:27:27 	 about to quantify Sk28_miRN_1
+
+time kallisto quant -i /Users/adrian/software/kallisto/human_index_standard/index.idx -o /Users/adrian/research/keflavik/results/kallisto/kallisto.100/Sk28_miRN_1 -t 8 -b 100  --verbose /Users/adrian/research/keflavik/results/clean_fastq/Sk28_miRN_1/Sk28_miRN_1_Sk28_miRN_1_MKRN240004581-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/results/clean_fastq/Sk28_miRN_1/Sk28_miRN_1_Sk28_miRN_1_MKRN240004581-1A_227Y7HLT4_L7_R2_clean.fastq.gz
+
+[quant] fragment length distribution will be estimated from the data
+[index] k-mer length: 31
+[index] number of targets: 227,665
+[index] number of k-mers: 139,900,295
+[index] number of D-list k-mers: 5,477,475
+[quant] running in paired-end mode
+[quant] will process pair 1: /Users/adrian/research/keflavik/results/clean_fastq/Sk28_miRN_1/Sk28_miRN_1_Sk28_miRN_1_MKRN240004581-1A_227Y7HLT4_L7_R1_clean.fastq.gz
+                             /Users/adrian/research/keflavik/results/clean_fastq/Sk28_miRN_1/Sk28_miRN_1_Sk28_miRN_1_MKRN240004581-1A_227Y7HLT4_L7_R2_clean.fastq.gz
+[quant] finding pseudoalignments for the reads ...
+[progress] 26M reads processed (83.8% mapped)
+[quant] done
+[quant] processed 26,342,883 reads, 22,077,583 reads pseudoaligned
+[quant] estimated average fragment length: 308.2
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,437 rounds
+[bstrp] number of EM bootstraps complete: 100
+
+
+real	17m46.769s
+user	125m33.696s
+sys	0m19.461s
+
+2024-06-29 10:45:13 	 about to quantify Sk28_miRN_2
+
+time kallisto quant -i /Users/adrian/software/kallisto/human_index_standard/index.idx -o /Users/adrian/research/keflavik/results/kallisto/kallisto.100/Sk28_miRN_2 -t 8 -b 100  --verbose /Users/adrian/research/keflavik/results/clean_fastq/Sk28_miRN_2/Sk28_miRN_2_Sk28_miRN_2_MKRN240004582-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/results/clean_fastq/Sk28_miRN_2/Sk28_miRN_2_Sk28_miRN_2_MKRN240004582-1A_227Y7HLT4_L7_R2_clean.fastq.gz
+
+[quant] fragment length distribution will be estimated from the data
+[index] k-mer length: 31
+[index] number of targets: 227,665
+[index] number of k-mers: 139,900,295
+[index] number of D-list k-mers: 5,477,475
+[quant] running in paired-end mode
+[quant] will process pair 1: /Users/adrian/research/keflavik/results/clean_fastq/Sk28_miRN_2/Sk28_miRN_2_Sk28_miRN_2_MKRN240004582-1A_227Y7HLT4_L7_R1_clean.fastq.gz
+                             /Users/adrian/research/keflavik/results/clean_fastq/Sk28_miRN_2/Sk28_miRN_2_Sk28_miRN_2_MKRN240004582-1A_227Y7HLT4_L7_R2_clean.fastq.gz
+[quant] finding pseudoalignments for the reads ...
+[progress] 19M reads processed (84.8% mapped)
+[quant] done
+[quant] processed 19,502,234 reads, 16,541,386 reads pseudoaligned
+[quant] estimated average fragment length: 283.6
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,275 rounds
+[bstrp] number of EM bootstraps complete: 100
+
+
+real	15m51.050s
+user	113m8.801s
+sys	0m17.073s
+
+2024-06-29 11:01:04 	 about to quantify Sk28_miRN_3
+
+time kallisto quant -i /Users/adrian/software/kallisto/human_index_standard/index.idx -o /Users/adrian/research/keflavik/results/kallisto/kallisto.100/Sk28_miRN_3 -t 8 -b 100  --verbose /Users/adrian/research/keflavik/results/clean_fastq/Sk28_miRN_3/Sk28_miRN_3_Sk28_miRN_3_MKRN240004583-1A_227Y7HLT4_L7_R1_clean.fastq.gz /Users/adrian/research/keflavik/results/clean_fastq/Sk28_miRN_3/Sk28_miRN_3_Sk28_miRN_3_MKRN240004583-1A_227Y7HLT4_L7_R2_clean.fastq.gz
+
+[quant] fragment length distribution will be estimated from the data
+[index] k-mer length: 31
+[index] number of targets: 227,665
+[index] number of k-mers: 139,900,295
+[index] number of D-list k-mers: 5,477,475
+[quant] running in paired-end mode
+[quant] will process pair 1: /Users/adrian/research/keflavik/results/clean_fastq/Sk28_miRN_3/Sk28_miRN_3_Sk28_miRN_3_MKRN240004583-1A_227Y7HLT4_L7_R1_clean.fastq.gz
+                             /Users/adrian/research/keflavik/results/clean_fastq/Sk28_miRN_3/Sk28_miRN_3_Sk28_miRN_3_MKRN240004583-1A_227Y7HLT4_L7_R2_clean.fastq.gz
+[quant] finding pseudoalignments for the reads ...
+[progress] 24M reads processed (82.5% mapped)
+[quant] done
+[quant] processed 25,055,310 reads, 20,664,814 reads pseudoaligned
+[quant] estimated average fragment length: 309.0
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,413 rounds
+[bstrp] number of EM bootstraps complete: 100
+
+
+real	49m22.448s
+user	127m37.082s
+sys	0m18.587s
+
+(base) necio5 2024-06-29 11:50:27 ~/hub/keflavik/002.map :

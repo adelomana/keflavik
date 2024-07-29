@@ -43,7 +43,7 @@ def printt(label):
 # 0. user defined variables
 #
 clean_fastq_dir = '/Users/adrian/research/keflavik/results/clean_fastq/'
-boots = 8
+boots = 100
 threads = 8
 results_dir = '/Users/adrian/research/keflavik/results/kallisto/kallisto.{}/'.format(boots)
 transcriptome_index = '/Users/adrian/software/kallisto/human_index_standard/index.idx'
