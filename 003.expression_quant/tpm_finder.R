@@ -77,5 +77,5 @@ View(tpm)
 store = paste(results_dir, '/DESeq2_TPM_values.tsv', sep='')
 write.table(tpm, file=store, quote=FALSE, sep='\t', col.names=NA)
 
-#store = paste(results_dir, '/annotation.tsv', sep='')
-#write.table(t2g, file=store, quote=FALSE, sep='\t', col.names=NA)
+store = paste(results_dir, '/annotation.tsv', sep='')
+write.table(t2g, file=store, quote=FALSE, sep='\t', col.names=NA)
